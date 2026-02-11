@@ -19,13 +19,13 @@ export function Footer() {
               Soluções logísticas rápidas e seguras para sua empresa e dia a dia. Entregamos confiança e eficiência em cada quilômetro.
             </p>
             <div className="flex gap-4 pt-2">
-              <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-secondary transition-colors">
+              <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-whatsapp transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-secondary transition-colors">
+              <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-whatsapp transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-secondary transition-colors">
+              <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-whatsapp transition-colors">
                 <Linkedin className="w-4 h-4" />
               </a>
             </div>
@@ -34,10 +34,10 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-6 text-white font-display">Links Rápidos</h3>
             <ul className="space-y-3 text-sm text-slate-400">
-              <li><Link href="/" className="hover:text-secondary transition-colors">Início</Link></li>
-              <li><Link href="/tracking" className="hover:text-secondary transition-colors">Rastrear Pedido</Link></li>
-              <li><Link href="/contact" className="hover:text-secondary transition-colors">Contato</Link></li>
-              <li><a href="#services" className="hover:text-secondary transition-colors">Nossos Serviços</a></li>
+              <li><Link href="/" className="hover:text-whatsapp transition-colors">Início</Link></li>
+              <li><Link href="/tracking" className="hover:text-whatsapp transition-colors">Rastrear Pedido</Link></li>
+              <li><Link href="/contact" className="hover:text-whatsapp transition-colors">Contato</Link></li>
+              <li><a href="#services" className="hover:text-whatsapp transition-colors">Nossos Serviços</a></li>
             </ul>
           </div>
 
@@ -55,15 +55,15 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-6 text-white font-display">Contato</h3>
             <ul className="space-y-4 text-sm text-slate-400">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-secondary shrink-0" />
+                <MapPin className="w-5 h-5 text-whatsapp shrink-0" />
                 <span>Rua das Entregas, 123<br />São Paulo - SP</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-secondary shrink-0" />
+                <Phone className="w-5 h-5 text-whatsapp shrink-0" />
                 <span>(11) 99999-9999</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-secondary shrink-0" />
+                <Mail className="w-5 h-5 text-whatsapp shrink-0" />
                 <span>contato@mrtexpress.com.br</span>
               </li>
             </ul>

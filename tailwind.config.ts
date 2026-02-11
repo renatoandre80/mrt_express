@@ -81,6 +81,10 @@ export default {
           busy: "rgb(239 68 68)",
           offline: "rgb(156 163 175)",
         },
+        whatsapp: {
+          DEFAULT: "hsl(var(--whatsapp) / <alpha-value>)",
+          foreground: "hsl(var(--whatsapp-foreground) / <alpha-value>)",
+        },
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],

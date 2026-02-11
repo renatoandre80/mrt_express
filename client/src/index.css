@@ -17,6 +17,8 @@
 
   --secondary: 47 95% 55%; /* Yellow */
   --secondary-foreground: 222 47% 11%;
+  --whatsapp: 142 70% 49%; /* WhatsApp Green restored */
+  --whatsapp-foreground: 0 0% 100%;
 
   --muted: 210 40% 96%;
   --muted-foreground: 215 16% 47%;

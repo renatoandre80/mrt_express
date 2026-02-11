@@ -69,7 +69,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button 
                 size="lg" 
-                className="bg-secondary hover:bg-secondary/90 text-white rounded-full px-8 h-14 text-lg font-bold shadow-lg shadow-secondary/25 hover:-translate-y-1 transition-all duration-300"
+                className="bg-whatsapp hover:bg-whatsapp/90 text-whatsapp-foreground rounded-full px-8 h-14 text-lg font-bold shadow-lg shadow-whatsapp/25 hover:-translate-y-1 transition-all duration-300"
                 onClick={() => window.open("https://wa.me/5511999999999", "_blank")}
               >
                 Chamar no WhatsApp
@@ -174,7 +174,7 @@ export default function Home() {
           </p>
           <Button 
             size="lg" 
-            className="bg-secondary hover:bg-secondary/90 text-white rounded-full px-10 h-16 text-xl font-bold shadow-2xl shadow-secondary/20 hover:scale-105 transition-all duration-300"
+            className="bg-whatsapp hover:bg-whatsapp/90 text-whatsapp-foreground rounded-full px-10 h-16 text-xl font-bold shadow-2xl shadow-whatsapp/20 hover:scale-105 transition-all duration-300"
             onClick={() => window.open("https://wa.me/5511999999999", "_blank")}
           >
             Fazer Cotação Agora
