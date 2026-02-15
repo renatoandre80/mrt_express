@@ -57,7 +57,7 @@ export function Navigation() {
             <Button 
               size="sm" 
               className="bg-secondary hover:bg-secondary/90 text-white shadow-lg shadow-secondary/20 rounded-full px-6 font-semibold"
-              onClick={() => window.open("https://wa.me/5511999999999", "_blank")}
+              onClick={() => window.open("https://wa.me/5511943960008", "_blank")}
             >
               <Phone className="w-4 h-4 mr-2" /> WhatsApp
             </Button>
@@ -96,7 +96,7 @@ export function Navigation() {
               <Button 
                 className="w-full bg-secondary hover:bg-secondary/90 text-white rounded-xl"
                 onClick={() => {
-                  window.open("https://wa.me/5511999999999", "_blank");
+                  window.open("https://wa.me/5511943960008", "_blank");
                   setIsOpen(false);
                 }}
               >

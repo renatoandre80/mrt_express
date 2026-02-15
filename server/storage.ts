@@ -6,7 +6,7 @@ import {
   type ContactRequest,
   type Order,
   type InsertOrder
-} from "@shared/schema";
+} from "../shared/schema";
 import { eq } from "drizzle-orm";
 
 export interface IStorage {

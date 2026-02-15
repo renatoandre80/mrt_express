@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export function WhatsAppButton() {
   return (
     <motion.a
-      href="https://wa.me/5511999999999"
+      href="https://wa.me/5511943960008"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 group cursor-pointer"

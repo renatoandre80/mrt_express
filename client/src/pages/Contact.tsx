@@ -63,7 +63,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-primary">Telefone / WhatsApp</h4>
-                      <p className="text-slate-600">(11) 99999-9999</p>
+                      <p className="text-slate-600">(11) 94396-0008</p>
                       <p className="text-sm text-slate-400 mt-1">Atendimento comercial 08h às 18h</p>
                     </div>
                   </div>
@@ -74,7 +74,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-primary">Email</h4>
-                      <p className="text-slate-600">contato@mrtexpress.com.br</p>
+                      <p className="text-slate-600">marretamotoca09@gmail.com</p>
                     </div>
                   </div>
 
@@ -91,7 +91,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="bg-secondary p-8 rounded-2xl shadow-lg text-white relative overflow-hidden group cursor-pointer" onClick={() => window.open("https://wa.me/5511999999999", "_blank")}>
+              <div className="bg-secondary p-8 rounded-2xl shadow-lg text-white relative overflow-hidden group cursor-pointer" onClick={() => window.open("https://wa.me/5511943960008", "_blank")}>
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform duration-500"></div>
                 <h3 className="text-2xl font-bold font-display mb-2 relative z-10">Precisa de urgência?</h3>
                 <p className="text-white/90 mb-6 relative z-10">Nosso time está online no WhatsApp para te atender agora mesmo.</p>

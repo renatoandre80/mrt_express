@@ -60,11 +60,11 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-whatsapp shrink-0" />
-                <span>(11) 99999-9999</span>
+                <a href="https://wa.me/5511943960008" target="_blank" rel="noopener noreferrer" className="hover:text-whatsapp transition-colors">(11) 94396-0008</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-whatsapp shrink-0" />
-                <span>contato@mrtexpress.com.br</span>
+                <a href="mailto:marretamotoca09@gmail.com" className="hover:text-whatsapp transition-colors">marretamotoca09@gmail.com</a>
               </li>
             </ul>
           </div>

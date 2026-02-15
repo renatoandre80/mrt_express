@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
-import { ArrowRight, ShieldCheck, Truck, Clock, Package, MapPin } from "lucide-react";
+import { ArrowRight, ShieldCheck, Truck, Clock, Package, MapPin, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { TrackingForm } from "@/components/TrackingForm";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 // Unsplash image for logistics background
@@ -47,7 +46,7 @@ export default function Home() {
         </div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -57,28 +56,28 @@ export default function Home() {
               <span className="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
               Disponível para entregas imediatas
             </div>
-            
+
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-display leading-tight text-balance">
               Entregas <span className="text-secondary">Rápidas</span> e <span className="text-secondary">Seguras</span>
             </h1>
-            
+
             <p className="text-lg md:text-xl text-slate-300 max-w-lg leading-relaxed">
               Motofretista credenciado com anos de experiência. Garantimos confiança, eficiência e preços justos para suas encomendas.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-whatsapp hover:bg-whatsapp/90 text-whatsapp-foreground rounded-full px-8 h-14 text-lg font-bold shadow-lg shadow-whatsapp/25 hover:-translate-y-1 transition-all duration-300"
-                onClick={() => window.open("https://wa.me/5511999999999", "_blank")}
+                onClick={() => window.open("https://wa.me/5511943960008", "_blank")}
               >
                 Chamar no WhatsApp
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Link href="/tracking">
-                <Button 
-                  variant="outline" 
-                  size="lg" 
+                <Button
+                  variant="outline"
+                  size="lg"
                   className="bg-white/5 border-white/20 text-white hover:bg-white/10 hover:text-white rounded-full px-8 h-14 text-lg backdrop-blur-sm"
                 >
                   Rastrear Pedido
@@ -87,19 +86,48 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative hidden lg:block"
           >
-            {/* 3D-like Card Effect */}
+            {/* Contact Info Card */}
             <div className="bg-white/5 backdrop-blur-md rounded-3xl p-8 border border-white/10 shadow-2xl relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -mr-20 -mt-20 group-hover:bg-secondary/30 transition-all duration-700"></div>
-              
-              <h3 className="text-2xl font-bold text-white mb-6 font-display">Rastreamento Rápido</h3>
-              <TrackingForm />
-              
+
+              <h3 className="text-2xl font-bold text-white mb-6 font-display">Entre em Contato</h3>
+
+              <div className="space-y-6 relative z-10">
+                <a
+                  href="https://wa.me/5511943960008"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 text-white/80 hover:text-whatsapp transition-colors group/item"
+                >
+                  <div className="bg-whatsapp/20 p-3 rounded-xl group-hover/item:bg-whatsapp/30 transition-colors">
+                    <Phone className="w-6 h-6 text-whatsapp" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-white text-sm">WhatsApp</p>
+                    <p className="text-lg">(11) 94396-0008</p>
+                  </div>
+                </a>
+
+                <a
+                  href="mailto:marretamotoca09@gmail.com"
+                  className="flex items-center gap-4 text-white/80 hover:text-secondary transition-colors group/item"
+                >
+                  <div className="bg-secondary/20 p-3 rounded-xl group-hover/item:bg-secondary/30 transition-colors">
+                    <Mail className="w-6 h-6 text-secondary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-white text-sm">Email</p>
+                    <p className="text-lg">marretamotoca09@gmail.com</p>
+                  </div>
+                </a>
+              </div>
+
               <div className="mt-8 flex items-center justify-between text-white/60 text-sm">
                 <span>Últimas entregas realizadas:</span>
                 <span className="text-secondary font-bold text-lg">+12.5k</span>
@@ -153,17 +181,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Mobile Tracking Section (Visible only on mobile) */}
-      <section className="lg:hidden py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-primary font-display">Rastrear Encomenda</h2>
-            <p className="text-slate-500 mt-2">Digite o código para acompanhar seu pedido</p>
-          </div>
-          <TrackingForm />
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-24 bg-primary relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 pattern-dots"></div>
@@ -175,7 +192,7 @@ export default function Home() {
           <Button 
             size="lg" 
             className="bg-whatsapp hover:bg-whatsapp/90 text-whatsapp-foreground rounded-full px-10 h-16 text-xl font-bold shadow-2xl shadow-whatsapp/20 hover:scale-105 transition-all duration-300"
-            onClick={() => window.open("https://wa.me/5511999999999", "_blank")}
+            onClick={() => window.open("https://wa.me/5511943960008", "_blank")}
           >
             Fazer Cotação Agora
           </Button>
