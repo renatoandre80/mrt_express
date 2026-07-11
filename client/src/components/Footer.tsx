@@ -35,9 +35,9 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-6 text-white font-display">Links Rápidos</h3>
             <ul className="space-y-3 text-sm text-slate-400">
               <li><Link href="/" className="hover:text-whatsapp transition-colors">Início</Link></li>
-              <li><Link href="/tracking" className="hover:text-whatsapp transition-colors">Rastrear Pedido</Link></li>
               <li><Link href="/contact" className="hover:text-whatsapp transition-colors">Contato</Link></li>
               <li><a href="#services" className="hover:text-whatsapp transition-colors">Nossos Serviços</a></li>
+              <li><a href="#galeria" className="hover:text-whatsapp transition-colors">Galeria</a></li>
             </ul>
           </div>
 
@@ -56,7 +56,7 @@ export function Footer() {
             <ul className="space-y-4 text-sm text-slate-400">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-whatsapp shrink-0" />
-                <span>Rua das Entregas, 123<br />São Paulo - SP</span>
+                <span>Rua Dezessete, 36<br />Diadema - SP</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-whatsapp shrink-0" />

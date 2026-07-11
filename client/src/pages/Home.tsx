@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { ArrowRight, ShieldCheck, Truck, Clock, Package, MapPin, Mail, Phone } from "lucide-react";
+import { ArrowRight, ShieldCheck, Clock, Bike, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { PhotoGallery } from "@/components/PhotoGallery";
 
 // Unsplash image for logistics background
 // https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop
@@ -22,9 +22,9 @@ export default function Home() {
       desc: "Profissionais credenciados e segurados. Sua encomenda tratada com o máximo cuidado."
     },
     {
-      icon: MapPin,
-      title: "Rastreamento Real",
-      desc: "Acompanhe cada etapa da sua entrega em tempo real através do nosso sistema."
+      icon: Bike,
+      title: "Cobertura Ampla",
+      desc: "Atendemos toda a região de Diadema e Grande São Paulo com agilidade e pontualidade."
     }
   ];
 
@@ -52,7 +52,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-white space-y-8"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm font-medium text-secondary-foreground/90">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-white/80 text-sm font-semibold text-primary shadow-md">
               <span className="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
               Disponível para entregas imediatas
             </div>
@@ -74,15 +74,14 @@ export default function Home() {
                 Chamar no WhatsApp
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-              <Link href="/tracking">
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="bg-white/5 border-white/20 text-white hover:bg-white/10 hover:text-white rounded-full px-8 h-14 text-lg backdrop-blur-sm"
-                >
-                  Rastrear Pedido
-                </Button>
-              </Link>
+              <Button
+                variant="outline"
+                size="lg"
+                className="bg-white/5 border-white/20 text-white hover:bg-white/10 hover:text-white rounded-full px-8 h-14 text-lg backdrop-blur-sm"
+                onClick={() => document.getElementById("galeria")?.scrollIntoView({ behavior: "smooth" })}
+              >
+                Ver Galeria
+              </Button>
             </div>
           </motion.div>
 
@@ -180,6 +179,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <PhotoGallery />
 
       {/* CTA Section */}
       <section className="py-24 bg-primary relative overflow-hidden">
