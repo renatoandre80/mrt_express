@@ -68,7 +68,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button
                 size="lg"
-                className="bg-whatsapp hover:bg-whatsapp/90 text-whatsapp-foreground rounded-full px-8 xl:px-12 h-14 xl:h-16 text-lg xl:text-xl font-bold shadow-lg shadow-whatsapp/25 hover:-translate-y-1 transition-all duration-300"
+                className="bg-whatsapp hover:bg-whatsapp/90 text-whatsapp-foreground rounded-full px-8 xl:px-10 h-14 text-lg xl:text-xl font-bold shadow-lg shadow-whatsapp/25 hover:-translate-y-1 transition-all duration-300"
                 onClick={() => window.open("https://wa.me/5511943960008", "_blank")}
               >
                 Chamar no WhatsApp
@@ -77,7 +77,7 @@ export default function Home() {
               <Button
                 variant="outline"
                 size="lg"
-                className="bg-white/5 border-white/20 text-white hover:bg-white/10 hover:text-white rounded-full px-8 xl:px-12 h-14 xl:h-16 text-lg xl:text-xl backdrop-blur-sm"
+                className="bg-white/5 border-white/20 text-white hover:bg-white/10 hover:text-white rounded-full px-8 xl:px-10 h-14 text-lg xl:text-xl backdrop-blur-sm"
                 onClick={() => document.getElementById("galeria")?.scrollIntoView({ behavior: "smooth" })}
               >
                 Ver Galeria
